@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  overflow-x: hidden;
+}
+
+@layer {
+  header nav ul li a {
+    @apply font-semibold text-neutral-500 opacity-75 hover:opacity-100 transition;
+  }
+}
