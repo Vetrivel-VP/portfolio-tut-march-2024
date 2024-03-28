@@ -6,8 +6,16 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer {
   header nav ul li a {
     @apply font-semibold text-neutral-500 opacity-75 hover:opacity-100 transition;
+  }
+
+  section {
+    @apply w-full h-[calc(100vh-70px)] md:h-[calc(100vh-100px)];
   }
 }
