@@ -16,6 +16,6 @@ html {
   }
 
   section {
-    @apply w-full h-[calc(100vh-70px)] md:h-[calc(100vh-100px)];
+    @apply w-full h-auto;
   }
 }

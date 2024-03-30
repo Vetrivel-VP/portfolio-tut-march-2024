@@ -13,7 +13,7 @@
   <body>
     <!-- Header -->
     <header
-      class="px-4 md:px-12 lg:px-24 py-4 md:py-8 lg:py-12 flex items-center gap-12 sticky top-0 backdrop-blur-md"
+      class="px-4 md:px-12 lg:px-24 py-4 md:py-8 lg:py-12 flex items-center gap-12 sticky top-0 backdrop-blur-md z-50"
     >
       <!-- logo -->
       <a
@@ -35,14 +35,14 @@
       <!-- mobile menu -->
       <nav
         id="mobileNav"
-        class="block md:hidden ml-auto absolute top-[70px] -right-[100%] z-50 w-1/2 h-[calc(100vh-70px)] backdrop-blur-md bg-black/10 shadow-md transition-all ease-in-out duration-150"
+        class="block md:hidden ml-auto absolute top-[70px] -right-[100%] z-50 w-1/2 h-[calc(100vh-70px)] backdrop-blur-md bg-black/80 shadow-md transition-all ease-in-out duration-150"
       >
         <ul class="flex flex-col items-start px-4 py-6 gap-y-8">
-          <li><a class="text-neutral-600" href="#home">Home</a></li>
-          <li><a class="text-neutral-600" href="#about">About</a></li>
-          <li><a class="text-neutral-600" href="#skills">Skills</a></li>
-          <li><a class="text-neutral-600" href="#projects">Projects</a></li>
-          <li><a class="text-neutral-600" href="#contact">Contact</a></li>
+          <li><a class="text-white" href="#home">Home</a></li>
+          <li><a class="text-white" href="#about">About</a></li>
+          <li><a class="text-white" href="#skills">Skills</a></li>
+          <li><a class="text-white" href="#projects">Projects</a></li>
+          <li><a class="text-white" href="#contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -123,31 +123,370 @@
       <div
         class="w-full flex items-center justify-center md:items-start md:justify-start py-4 md:py-32"
       >
-        <img src="./assets/img/hero.jpg" class="w-full object-contain" alt="" />
+        <img
+          src="./assets/img/hero.jpg"
+          class="w-[260px] md:w-full object-contain"
+          alt=""
+        />
       </div>
     </section>
 
     <!-- About -->
     <section class="px-4 md:px-12 lg:px-32 py-4 md:py-8 lg:py-12" id="about">
-      About
+      <!-- title section -->
+      <div class="w-full flex flex-col items-center justify-center gap-1">
+        <h2
+          class="text-3xl capitalize tracking-wider font-bold text-neutral-600"
+        >
+          About
+        </h2>
+        <div class="w-10 h-1 rounded-full bg-blue-500"></div>
+      </div>
+      <!-- content section -->
+
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 mt-24 gap-6">
+        <div class="w-full flex items-center justify-center">
+          <div class="w-3/4 h-[475px] rounded-md relative">
+            <div class="w-full h-full rounded-md bg-blue-400 blur"></div>
+            <img
+              src="https://cdn.pixabay.com/photo/2023/11/10/02/30/woman-8378634_1280.jpg"
+              class="w-full h-full object-cover rounded-md absolute top-5 right-5"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="flex flex-col items-start justify-start gap-4">
+          <h3
+            class="text-xl md:text-2xl text-neutral-600 tracking-wider text-center pb-6"
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+          </h3>
+          <p
+            class="text-center md:text-left text-base text-neutral-500 tracking-wide"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            quisquam iure voluptates accusantium maxime sit dolore, deserunt
+            fuga suscipit ipsam nihil laboriosam dicta perferendis itaque,
+            dolorem qui provident ex voluptate.
+          </p>
+          <p
+            class="text-center md:text-left text-base text-neutral-500 tracking-wide"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            quisquam iure voluptates accusantium maxime sit dolore, deserunt
+            fuga suscipit ipsam nihil laboriosam dicta perferendis itaque,
+            dolorem qui provident ex voluptate.
+          </p>
+          <p
+            class="text-center md:text-left text-base text-neutral-500 tracking-wide"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            quisquam iure voluptates accusantium maxime sit dolore, deserunt
+            fuga suscipit ipsam nihil laboriosam dicta perferendis itaque,
+            dolorem qui provident ex voluptate.
+          </p>
+
+          <button
+            type="button"
+            class="w-full md:w-auto px-24 py-3 rounded-md hover:bg-gradient-to-br hover:from-purple-600 hover:via-violet-600 hover:to-blue-600 text-neutral-600 border-blue-600 shadow-md transition-all hover:text-white active:scale-95 bg-gray-200 text-lg font-semibold"
+          >
+            Know More
+          </button>
+        </div>
+      </div>
     </section>
 
     <!-- Skills -->
     <section class="px-4 md:px-12 lg:px-32 py-4 md:py-8 lg:py-12" id="skills">
-      Skills
+      <!-- title section -->
+      <div class="w-full flex flex-col items-center justify-center gap-1">
+        <h2
+          class="text-3xl capitalize tracking-wider font-bold text-neutral-600"
+        >
+          Skills
+        </h2>
+        <div class="w-10 h-1 rounded-full bg-blue-500"></div>
+      </div>
+      <!-- content section -->
+
+      <div class="w-full grid grid-cols-1 md:grid-cols-2 mt-24 gap-6">
+        <div class="flex flex-col items-start justify-start gap-6">
+          <h3 class="text-xl md:text-2xl text-neutral-600 tracking-wider pb-6">
+            My Professional Skills
+          </h3>
+
+          <!-- html -->
+          <div
+            class="w-full h-16 shadow-md rounded-md flex flex-col items-start overflow-hidden"
+          >
+            <div class="flex items-center justify-between px-4 h-full w-full">
+              <p class="text-xl font-bold text-neutral-600 tracking-wider">
+                HTML
+              </p>
+              <p class="text-lg font-bold text-red-500 tracking-wider">90 %</p>
+            </div>
+            <div class="h-1 w-full bg-gray-200 mt-auto relative">
+              <div class="w-[90%] h-full bg-red-500"></div>
+            </div>
+          </div>
+          <!-- css -->
+          <div
+            class="w-full h-16 shadow-md rounded-md flex flex-col items-start overflow-hidden"
+          >
+            <div class="flex items-center justify-between px-4 h-full w-full">
+              <p class="text-xl font-bold text-neutral-600 tracking-wider">
+                CSS
+              </p>
+              <p class="text-lg font-bold text-sky-500 tracking-wider">75 %</p>
+            </div>
+            <div class="h-1 w-full bg-gray-200 mt-auto relative">
+              <div class="w-[75%] h-full bg-sky-500"></div>
+            </div>
+          </div>
+          <!-- js -->
+          <div
+            class="w-full h-16 shadow-md rounded-md flex flex-col items-start overflow-hidden"
+          >
+            <div class="flex items-center justify-between px-4 h-full w-full">
+              <p class="text-xl font-bold text-neutral-600 tracking-wider">
+                JS
+              </p>
+              <p class="text-lg font-bold text-yellow-500 tracking-wider">
+                86 %
+              </p>
+            </div>
+            <div class="h-1 w-full bg-gray-200 mt-auto relative">
+              <div class="w-[86%] h-full bg-yellow-500"></div>
+            </div>
+          </div>
+          <!-- reactjs -->
+          <div
+            class="w-full h-16 shadow-md rounded-md flex flex-col items-start overflow-hidden"
+          >
+            <div class="flex items-center justify-between px-4 h-full w-full">
+              <p class="text-xl font-bold text-neutral-600 tracking-wider">
+                ReactJS
+              </p>
+              <p class="text-lg font-bold text-purple-500 tracking-wider">
+                94 %
+              </p>
+            </div>
+            <div class="h-1 w-full bg-gray-200 mt-auto relative">
+              <div class="w-[94%] h-full bg-purple-500"></div>
+            </div>
+          </div>
+          <!-- tailwindcss -->
+          <div
+            class="w-full h-16 shadow-md rounded-md flex flex-col items-start overflow-hidden"
+          >
+            <div class="flex items-center justify-between px-4 h-full w-full">
+              <p class="text-xl font-bold text-neutral-600 tracking-wider">
+                TailwindCSS
+              </p>
+              <p class="text-lg font-bold text-blue-500 tracking-wider">95 %</p>
+            </div>
+            <div class="h-1 w-full bg-gray-200 mt-auto relative">
+              <div class="w-[95%] h-full bg-blue-500"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full flex items-center justify-center">
+          <div class="w-full h-[475px] rounded-md relative">
+            <img
+              src="./assets/img/skills.jpg"
+              class="w-full h-full object-cover"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Projects -->
     <section class="px-4 md:px-12 lg:px-32 py-4 md:py-8 lg:py-12" id="projects">
-      Projects
+      <!-- title section -->
+      <div class="w-full flex flex-col items-center justify-center gap-1">
+        <h2
+          class="text-3xl capitalize tracking-wider font-bold text-neutral-600"
+        >
+          Projects
+        </h2>
+        <div class="w-10 h-1 rounded-full bg-blue-500"></div>
+      </div>
+
+      <!-- content -->
+      <div
+        class="w-full gap-4 grid grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-12"
+      >
+        <div class="w-full h-52 rounded-md bg-gray-100">
+          <a href="#" class="w-full h-full">
+            <img
+              src="https://images.ctfassets.net/ooa29xqb8tix/7hmqCSqtjjQ8I3C6ZRxrNO/32bd73d6935b6f2e1763f250567e3dc5/AI-Driven_UI_Design_with_Midjourney_and_Figma_image_1.jpg"
+              alt=""
+              class="w-full h-full object-cover rounded-md"
+            />
+          </a>
+        </div>
+        <div class="w-full h-52 rounded-md bg-gray-100">
+          <a href="#" class="w-full h-full">
+            <img
+              src="https://images.ctfassets.net/ooa29xqb8tix/7hmqCSqtjjQ8I3C6ZRxrNO/32bd73d6935b6f2e1763f250567e3dc5/AI-Driven_UI_Design_with_Midjourney_and_Figma_image_1.jpg"
+              alt=""
+              class="w-full h-full object-cover rounded-md"
+            />
+          </a>
+        </div>
+        <div class="w-full h-52 rounded-md bg-gray-100">
+          <a href="#" class="w-full h-full">
+            <img
+              src="https://images.ctfassets.net/ooa29xqb8tix/7hmqCSqtjjQ8I3C6ZRxrNO/32bd73d6935b6f2e1763f250567e3dc5/AI-Driven_UI_Design_with_Midjourney_and_Figma_image_1.jpg"
+              alt=""
+              class="w-full h-full object-cover rounded-md"
+            />
+          </a>
+        </div>
+        <div class="w-full h-52 rounded-md bg-gray-100">
+          <a href="#" class="w-full h-full">
+            <img
+              src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/312843156/original/17dbf21bd8d9cba7b114713301039e1ff12491f7/cabvy-online-banking-2023.png"
+              alt=""
+              class="w-full h-full object-cover rounded-md"
+            />
+          </a>
+        </div>
+        <div class="w-full h-52 rounded-md bg-gray-100">
+          <a href="#" class="w-full h-full">
+            <img
+              src="https://api.tino.design/wp-content/uploads/2022/12/5-13-1024x768.jpeg"
+              alt=""
+              class="w-full h-full object-cover rounded-md"
+            />
+          </a>
+        </div>
+        <div class="w-full h-52 rounded-md bg-gray-100">
+          <a href="#" class="w-full h-full">
+            <img
+              src="https://images.ctfassets.net/ooa29xqb8tix/7hmqCSqtjjQ8I3C6ZRxrNO/32bd73d6935b6f2e1763f250567e3dc5/AI-Driven_UI_Design_with_Midjourney_and_Figma_image_1.jpg"
+              alt=""
+              class="w-full h-full object-cover rounded-md"
+            />
+          </a>
+        </div>
+        <div class="w-full h-52 rounded-md bg-gray-100">
+          <a href="#" class="w-full h-full">
+            <img
+              src="https://images.ctfassets.net/ooa29xqb8tix/6Dya8w9IamJPpc80hQIJ3Q/2543ab28598f7702ef71b56809530a3d/Intro_to_iOS_Design_image_1.jpg"
+              alt=""
+              class="w-full h-full object-cover rounded-md"
+            />
+          </a>
+        </div>
+        <div class="w-full h-52 rounded-md bg-gray-100">
+          <a href="#" class="w-full h-full">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtpJbUBg66ctmGf7R_eU-Bh4Vq34oBjjPyNZyiqjRSNu6ZdbwnPl5ahr8sp2K0FxAo63I&usqp=CAU"
+              alt=""
+              class="w-full h-full object-cover rounded-md"
+            />
+          </a>
+        </div>
+        <div class="w-full h-52 rounded-md bg-gray-100">
+          <a href="#" class="w-full h-full">
+            <img
+              src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/191931461/original/8656ac253f26c49870c93c327c7084d0366fb452/create-outstanding-application-ui-design.png"
+              alt=""
+              class="w-full h-full object-cover rounded-md"
+            />
+          </a>
+        </div>
+      </div>
     </section>
 
     <!-- contact -->
     <section class="px-4 md:px-12 lg:px-32 py-4 md:py-8 lg:py-12" id="contact">
-      Contact
+      <!-- title section -->
+      <div class="w-full flex flex-col items-center justify-center gap-1">
+        <h2
+          class="text-3xl capitalize tracking-wider font-bold text-neutral-600"
+        >
+          Contact Me
+        </h2>
+        <div class="w-10 h-1 rounded-full bg-blue-500"></div>
+      </div>
+
+      <div class="mt-12 w-full flex flex-col items-center justify-center gap-6">
+        <input
+          class="w-full md:w-96 border px-4 py-3 rounded-md border-gray-400"
+          type="text"
+          id="fullName"
+          placeholder="Full Name"
+        />
+
+        <input
+          class="w-full md:w-96 border px-4 py-3 rounded-md border-gray-400"
+          type="email"
+          id="fullName"
+          placeholder="Your Email"
+        />
+        <textarea
+          class="w-full md:w-96 border px-4 py-3 rounded-md border-gray-400"
+          name=""
+          id="message"
+          cols=""
+          rows="10"
+          placeholder="Message"
+        ></textarea>
+
+        <button
+          type="button"
+          class="w-full md:w-auto px-24 py-3 rounded-md hover:bg-gradient-to-br hover:from-purple-600 hover:via-violet-600 hover:to-blue-600 text-neutral-600 border-blue-600 shadow-md transition-all hover:text-white active:scale-95 bg-gray-200 text-lg font-semibold"
+        >
+          Hire Me
+        </button>
+      </div>
     </section>
 
     <!-- Footer -->
+
+    <footer
+      class="w-full h-[300px] bg-gradient-to-b from-transparent mt-24 to-sky-200 flex items-center justify-center"
+    >
+      <div
+        class="w-full md:w-auto flex flex-col items-center justify-center gap-4"
+      >
+        <p class="text-3xl font-bold tracking-wider">Vetrivel Ravi</p>
+        <div
+          class="mt-24 flex items-center justify-evenly w-full md:w-auto gap-0 md:gap-16"
+        >
+          <a
+            class="text-2xl md:text-3xl text-neutral-600 hover:scale-125 transition-all hover:text-blue-600"
+            href="#"
+            ><i class="bx bxl-facebook"></i
+          ></a>
+          <a
+            class="text-2xl md:text-3xl text-neutral-600 hover:scale-125 transition-all hover:text-emerald-600"
+            href="#"
+            ><i class="bx bxl-whatsapp"></i
+          ></a>
+          <a
+            class="text-2xl md:text-3xl text-neutral-600 hover:scale-125 transition-all hover:text-pink-600"
+            href="#"
+            ><i class="bx bxl-instagram"></i
+          ></a>
+          <a
+            class="text-2xl md:text-3xl text-neutral-600 hover:scale-125 transition-all hover:text-sky-600"
+            href="#"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+          <a
+            class="text-2xl md:text-3xl text-neutral-600 hover:scale-125 transition-all hover:text-violet-600"
+            href="#"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
 
     <script src="./assets/js/index.js"></script>
   </body>
